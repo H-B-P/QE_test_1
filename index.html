@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>test</title>
+</head>
+<body>
+  <div>I'm 80% confident that George Washington was born before the year <input type="number" id="q_1_80">. <span id="a_1_80"></span></div>
+  <div>I'm 95% confident that George Washington was born before the year <input type="number" id="q_1_95">. <span id="a_1_95"></span></div>
+  <div>I'm 99% confident that George Washington was born before the year <input type="number" id="q_1_99">. <span id="a_1_99"></span></div>
+  <div id="a_1"></div>
+  
+  <br>
+  <br>
+  
+  <div>I'm 80% confident that the Eiffel Tower is more than <input type="number" id="q_2_80"> metres tall. <span id="a_2_80"></span></div>
+  <div>I'm 95% confident that the Eiffel Tower is more than <input type="number" id="q_2_95"> metres tall. <span id="a_2_95"></span></div>
+  <div>I'm 99% confident that the Eiffel Tower is more than <input type="number" id="q_2_99"> metres tall. <span id="a_2_99"></span></div>
+  <div id="a_2"></div>
+  
+  <br>
+  <br>
+  
+  <div>I'm 80% confident that, as of March 2022, the USA has had fewer than <input type="number" id="q_3_80"> Vice Presidents. <span id="a_3_80"></span></div>
+  <div>I'm 95% confident that, as of March 2022, the USA has had fewer than <input type="number" id="q_3_95"> Vice Presidents. <span id="a_3_95"></span></div>
+  <div>I'm 99% confident that, as of March 2022, the USA has had fewer than <input type="number" id="q_3_99"> Vice Presidents. <span id="a_3_99"></span></div>
+  <div id="a_3"></div>
+  
+  <br>
+  <br>
+  
+  <div>I'm 80% confident that the UK population in mid-2020 was more than <input type="number" id="q_4_80"> million. <span id="a_4_80"></span></div>
+  <div>I'm 95% confident that the UK population in mid-2020 was more than <input type="number" id="q_4_95"> million. <span id="a_4_95"></span></div>
+  <div>I'm 99% confident that the UK population in mid-2020 was more than <input type="number" id="q_4_99"> million. <span id="a_4_99"></span></div>
+  <div id="a_4"></div>
+  
+  <br>
+  <br>
+  
+  <div>I'm 80% confident that the first Harry Potter book was published before the year <input type="number" id="q_5_80">. <span id="a_5_80"></span></div>
+  <div>I'm 95% confident that the first Harry Potter book was published before the year <input type="number" id="q_5_95">. <span id="a_5_95"></span></div>
+  <div>I'm 99% confident that the first Harry Potter book was published before the year <input type="number" id="q_5_99">. <span id="a_5_99"></span></div>
+  <div id="a_5"></div>
+  
+  <br>
+  <br>
+  
+  <div>I'm 80% confident that Google had more than <input type="number" id="q_6_80"> employees in 2021. <span id="a_6_80"></span></div>
+  <div>I'm 95% confident that Google had more than <input type="number" id="q_6_95"> employees in 2021. <span id="a_6_95"></span></div>
+  <div>I'm 99% confident that Google had more than <input type="number" id="q_6_99"> employees in 2021. <span id="a_6_99"></span></div>
+  <div id="a_6"></div>
+  
+  <br>
+  <br>
+  
+  <div>I'm 80% confident that the first Star Wars film is less than <input type="number" id="q_7_80"> minutes long. <span id="a_7_80"></span></div>
+  <div>I'm 95% confident that the first Star Wars film is less than <input type="number" id="q_7_95"> minutes long. <span id="a_7_95"></span></div>
+  <div>I'm 99% confident that the first Star Wars film is less than <input type="number" id="q_7_99"> minutes long. <span id="a_7_99"></span></div>
+  <div id="a_7"></div>
+  
+  <br>
+  <br>
+  
+  <div>I'm 80% confident that Elon Musk was born after the year <input type="number" id="q_8_80">. <span id="a_8_80"></span></div>
+  <div>I'm 95% confident that Elon Musk was born after the year <input type="number" id="q_8_95">. <span id="a_8_95"></span></div>
+  <div>I'm 99% confident that Elon Musk was born after the year <input type="number" id="q_8_99">. <span id="a_8_99"></span></div>
+  <div id="a_8"></div>
+  
+  <br>
+  <br>
+  
+  <div>I'm 80% confident that Big Ben is less than <input type="number" id="q_9_80"> metres tall. <span id="a_9_80"></span></div>
+  <div>I'm 95% confident that Big Ben is less than <input type="number" id="q_9_95"> metres tall. <span id="a_9_95"></span></div>
+  <div>I'm 99% confident that Big Ben is less than <input type="number" id="q_9_99"> metres tall. <span id="a_9_99"></span></div>
+  <div id="a_9"></div>
+  
+  <br>
+  <br>
+  
+  <div>I'm 80% confident that Arsenal football club was founded after the year <input type="number" id="q_10_80">. <span id="a_10_80"></span></div>
+  <div>I'm 95% confident that Arsenal football club was founded after the year <input type="number" id="q_10_95">. <span id="a_10_95"></span></div>
+  <div>I'm 99% confident that Arsenal football club was founded after the year <input type="number" id="q_10_99">. <span id="a_10_99"></span></div>
+  <div id="a_10"></div>
+  
+  <br>
+  <br>
+  
+  <div>I'm 80% confident that Buffy the Vampire Slayer had fewer than <input type="number" id="q_11_80"> episodes. <span id="a_11_80"></span></div>
+  <div>I'm 95% confident that Buffy the Vampire Slayer had fewer than <input type="number" id="q_11_95"> episodes. <span id="a_11_95"></span></div>
+  <div>I'm 99% confident that Buffy the Vampire Slayer had fewer than <input type="number" id="q_11_99"> episodes. <span id="a_11_99"></span></div>
+  <div id="a_11"></div>
+  
+  <br>
+  <br>
+  
+  <div>I'm 80% confident that Australia's top income tax rate (circa 2022) is more than <input type="number" id="q_12_80">%. <span id="a_12_80"></span></div>
+  <div>I'm 95% confident that Australia's top income tax rate (circa 2022) is more than <input type="number" id="q_12_95">%. <span id="a_12_95"></span></div>
+  <div>I'm 99% confident that Australia's top income tax rate (circa 2022) is more than <input type="number" id="q_12_99">%. <span id="a_12_99"></span></div>
+  <div id="a_12"></div>
+  
+  <br>
+  <br>
+  
+  <div>I'm 80% confident that China's population in November 2020 was less than <input type="number" id="q_13_80"> million. <span id="a_12_80"></span></div>
+  <div>I'm 95% confident that China's population in November 2020 was less than <input type="number" id="q_13_95"> million. <span id="a_12_95"></span></div>
+  <div>I'm 99% confident that China's population in November 2020 was less than <input type="number" id="q_13_99"> million. <span id="a_12_99"></span></div>
+  <div id="a_13"></div>
+  
+  <br>
+  <br>
+  
+  <div>I'm 80% confident that the land area of Texas is more than <input type="number" id="q_14_80"> thousand square miles. <span id="a_14_80"></span></div>
+  <div>I'm 95% confident that the land area of Texas is more than <input type="number" id="q_14_95"> thousand square miles. <span id="a_14_95"></span></div>
+  <div>I'm 99% confident that the land area of Texas is more than <input type="number" id="q_14_99"> thousand square miles. <span id="a_14_99"></span></div>
+  <div id="a_14"></div>
+  
+  <br>
+  <br>
+  
+  <div>I'm 80% confident that the person who wrote this quiz was born before the year <input type="number" id="q_15_80">. <span id="a_15_80"></span></div>
+  <div>I'm 95% confident that the person who wrote this quiz was born before the year <input type="number" id="q_15_95">. <span id="a_15_95"></span></div>
+  <div>I'm 99% confident that the person who wrote this quiz was born before the year <input type="number" id="q_15_99">. <span id="a_15_99"></span></div>
+  <div id="a_15"></div>
+  
+  <br>
+  <br>
+  
+  <div>I'm 80% confident that Queen Victoria was more than <input type="number" id="q_16_80"> years old when she died. <span id="a_16_80"></span>
+  <div>I'm 95% confident that Queen Victoria was more than <input type="number" id="q_16_95"> years old when she died. <span id="a_16_95"></span>
+  <div>I'm 99% confident that Queen Victoria was more than <input type="number" id="q_16_99"> years old when she died. <span id="a_16_99"></span>
+  <div id="a_16"></div>
+  
+  <br>
+  <br>
+
+  <div>I'm 80% confident that the first episode of Doctor Who was broadcast before the year <input type="number" id="q_17_80">. <span id="a_17_80"></span>
+  <div>I'm 95% confident that the first episode of Doctor Who was broadcast before the year <input type="number" id="q_17_95">. <span id="a_17_95"></span>
+  <div>I'm 99% confident that the first episode of Doctor Who was broadcast before the year <input type="number" id="q_17_99">. <span id="a_17_99"></span>
+  <div id="a_17"></div>
+
+  <br>
+  <br>
+
+  <div>I'm 80% confident that the tallest human in recorded history was more than <input type="number" id="q_18_80">cm tall. <span id="a_18_80"></span>
+  <div>I'm 95% confident that the tallest human in recorded history was more than <input type="number" id="q_18_95">cm tall. <span id="a_18_95"></span>
+  <div>I'm 99% confident that the tallest human in recorded history was more than <input type="number" id="q_18_99">cm tall. <span id="a_18_99"></span>
+  <div id="a_18"></div>
+  
+  <br>
+  <br>
+
+  <div>I'm 80% confident that Loch Ness' deepest point is less than <input type="number" id="q_19_80"> metres deep. <span id="a_19_80"></span>
+  <div>I'm 95% confident that Loch Ness' deepest point is less than <input type="number" id="q_19_95"> metres deep. <span id="a_19_95"></span>
+  <div>I'm 99% confident that Loch Ness' deepest point is less than <input type="number" id="q_19_99"> metres deep. <span id="a_19_99"></span>
+  <div id="a_19"></div>
+  
+  <br>
+  <br>
+
+  <div>I'm 80% confident that Earth's surface is more than <input type="number" id="q_20_80">% water. <span id="a_20_80"></span>
+  <div>I'm 95% confident that Earth's surface is more than <input type="number" id="q_20_95">% water. <span id="a_20_95"></span>
+  <div>I'm 99% confident that Earth's surface is more than <input type="number" id="q_20_99">% water. <span id="a_20_99"></span>
+  <div id="a_20"></div>
+  
+  <br>
+  <br>
+  
+  <div><button onclick="check()">Check</button></div>
+  
+  <br>
+  <br>
+  
+  <div id="eval80"></div>
+  <div id="eval95"></div>
+  <div id="eval99"></div>
+  
+<script id="jsbin-javascript">
+
+function factorial(x){
+ op=1
+ for (let i = 1; i <= x; i++) {
+  op*=i
+ }
+ return op
+}
+
+function check(){
+ wrong_80 = 0
+ wrong_95 = 0
+ wrong_99 = 0
+ 
+ answer = 1732
+ document.getElementById("a_1").innerHTML = "Answer: " + answer
+ guess_80 = document.getElementById("q_1_80").value
+ if (guess_80 <= answer){
+  document.getElementById("a_1_80").innerHTML = 'X'
+  wrong_80+=1
+ }
+ guess_95 = document.getElementById("q_1_95").value
+ if (guess_95 <= answer){
+  document.getElementById("a_1_95").innerHTML = 'X'
+  wrong_95+=1
+ }
+ guess_99 = document.getElementById("q_1_99").value
+ if (guess_99 <= answer){
+  document.getElementById("a_1_99").innerHTML = 'X'
+  wrong_99+=1
+ }
+ 
+ 
+ answer = 324
+ document.getElementById("a_2").innerHTML = "Answer: " + answer
+ guess_80 = document.getElementById("q_2_80").value
+ if (guess_80 >= answer){
+  document.getElementById("a_2_80").innerHTML = 'X'
+  wrong_80+=1
+ }
+ guess_95 = document.getElementById("q_2_95").value
+ if (guess_95 >= answer){
+  document.getElementById("a_2_95").innerHTML = 'X'
+  wrong_95+=1
+ }
+ guess_99 = document.getElementById("q_2_99").value
+ if (guess_99 >= answer){
+  document.getElementById("a_2_99").innerHTML = 'X'
+  wrong_99+=1
+ }
+ 
+ answer = 49
+ document.getElementById("a_3").innerHTML = "Answer: " + answer
+ guess_80 = document.getElementById("q_3_80").value
+ if (guess_80 <= answer){
+  document.getElementById("a_3_80").innerHTML = 'X'
+  wrong_80+=1
+ }
+ guess_95 = document.getElementById("q_3_95").value
+ if (guess_95 <= answer){
+  document.getElementById("a_3_95").innerHTML = 'X'
+  wrong_95+=1
+ }
+ guess_99 = document.getElementById("q_3_99").value
+ if (guess_99 <= answer){
+  document.getElementById("a_3_99").innerHTML = 'X'
+  wrong_99+=1
+ }
+ 
+ answer = 67.1
+ document.getElementById("a_4").innerHTML = "Answer: " + answer
+ guess_80 = document.getElementById("q_4_80").value
+ if (guess_80 >= answer){
+  document.getElementById("a_4_80").innerHTML = 'X'
+  wrong_80+=1
+ }
+ guess_95 = document.getElementById("q_4_95").value
+ if (guess_95 >= answer){
+  document.getElementById("a_4_95").innerHTML = 'X'
+  wrong_95+=1
+ }
+ guess_99 = document.getElementById("q_4_99").value
+ if (guess_99 >= answer){
+  document.getElementById("a_4_99").innerHTML = 'X'
+  wrong_99+=1
+ }
+ 
+ answer = 1997
+ document.getElementById("a_5").innerHTML = "Answer: " + answer
+ guess_80 = document.getElementById("q_5_80").value
+ if (guess_80 <= answer){
+  document.getElementById("a_5_80").innerHTML = 'X'
+  wrong_80+=1
+ }
+ guess_95 = document.getElementById("q_5_95").value
+ if (guess_95 <= answer){
+  document.getElementById("a_5_95").innerHTML = 'X'
+  wrong_95+=1
+ }
+ guess_99 = document.getElementById("q_5_99").value
+ if (guess_99 <= answer){
+  document.getElementById("a_5_99").innerHTML = 'X'
+  wrong_99+=1
+ }
+ 
+ answer = 139995
+ document.getElementById("a_6").innerHTML = "Answer: " + answer
+ guess_80 = document.getElementById("q_6_80").value
+ if (guess_80 >= answer){
+  document.getElementById("a_6_80").innerHTML = 'X'
+  wrong_80+=1
+ }
+ guess_95 = document.getElementById("q_6_95").value
+ if (guess_95 >= answer){
+  document.getElementById("a_6_95").innerHTML = 'X'
+  wrong_95+=1
+ }
+ guess_99 = document.getElementById("q_6_99").value
+ if (guess_99 >= answer){
+  document.getElementById("a_6_99").innerHTML = 'X'
+  wrong_99+=1
+ }
+ 
+ answer = 121
+ document.getElementById("a_7").innerHTML = "Answer: " + answer
+ guess_80 = document.getElementById("q_7_80").value
+ if (guess_80 <= answer){
+  document.getElementById("a_7_80").innerHTML = 'X'
+  wrong_80+=1
+ }
+ guess_95 = document.getElementById("q_7_95").value
+ if (guess_95 <= answer){
+  document.getElementById("a_7_95").innerHTML = 'X'
+  wrong_95+=1
+ }
+ guess_99 = document.getElementById("q_7_99").value
+ if (guess_99 <= answer){
+  document.getElementById("a_7_99").innerHTML = 'X'
+  wrong_99+=1
+ }
+ 
+ answer = 1971
+ document.getElementById("a_8").innerHTML = "Answer: " + answer
+ guess_80 = document.getElementById("q_8_80").value
+ if (guess_80 >= answer){
+  document.getElementById("a_8_80").innerHTML = 'X'
+  wrong_80+=1
+ }
+ guess_95 = document.getElementById("q_8_95").value
+ if (guess_95 >= answer){
+  document.getElementById("a_8_95").innerHTML = 'X'
+  wrong_95+=1
+ }
+ guess_99 = document.getElementById("q_8_99").value
+ if (guess_99 >= answer){
+  document.getElementById("a_8_99").innerHTML = 'X'
+  wrong_99+=1
+ }
+ 
+ answer = 96
+ document.getElementById("a_9").innerHTML = "Answer: " + answer
+ guess_80 = document.getElementById("q_9_80").value
+ if (guess_80 <= answer){
+  document.getElementById("a_9_80").innerHTML = 'X'
+  wrong_80+=1
+ }
+ guess_95 = document.getElementById("q_9_95").value
+ if (guess_95 <= answer){
+  document.getElementById("a_9_95").innerHTML = 'X'
+  wrong_95+=1
+ }
+ guess_99 = document.getElementById("q_9_99").value
+ if (guess_99 <= answer){
+  document.getElementById("a_9_99").innerHTML = 'X'
+  wrong_99+=1
+ }
+ 
+ answer = 1886
+ document.getElementById("a_10").innerHTML = "Answer: " + answer
+ guess_80 = document.getElementById("q_10_80").value
+ if (guess_80 >= answer){
+  document.getElementById("a_10_80").innerHTML = 'X'
+  wrong_80+=1
+ }
+ guess_95 = document.getElementById("q_10_95").value
+ if (guess_95 >= answer){
+  document.getElementById("a_10_95").innerHTML = 'X'
+  wrong_95+=1
+ }
+ guess_99 = document.getElementById("q_10_99").value
+ if (guess_99 >= answer){
+  document.getElementById("a_10_99").innerHTML = 'X'
+  wrong_99+=1
+ }
+ 
+ answer = 144
+ document.getElementById("a_11").innerHTML = "Answer: " + answer
+ guess_80 = document.getElementById("q_11_80").value
+ if (guess_80 <= answer){
+  document.getElementById("a_11_80").innerHTML = 'X'
+  wrong_80+=1
+ }
+ guess_95 = document.getElementById("q_11_95").value
+ if (guess_95 <= answer){
+  document.getElementById("a_11_95").innerHTML = 'X'
+  wrong_95+=1
+ }
+ guess_99 = document.getElementById("q_11_99").value
+ if (guess_99 <= answer){
+  document.getElementById("a_11_99").innerHTML = 'X'
+  wrong_99+=1
+ }
+ 
+ answer = 45
+ document.getElementById("a_12").innerHTML = "Answer: " + answer
+ guess_80 = document.getElementById("q_12_80").value
+ if (guess_80 >= answer){
+  document.getElementById("a_12_80").innerHTML = 'X'
+  wrong_80+=1
+ }
+ guess_95 = document.getElementById("q_12_95").value
+ if (guess_95 >= answer){
+  document.getElementById("a_12_95").innerHTML = 'X'
+  wrong_95+=1
+ }
+ guess_99 = document.getElementById("q_12_99").value
+ if (guess_99 >= answer){
+  document.getElementById("a_12_99").innerHTML = 'X'
+  wrong_99+=1
+ }
+ 
+ answer = 1412
+ document.getElementById("a_13").innerHTML = "Answer: " + answer
+ guess_80 = document.getElementById("q_13_80").value
+ if (guess_80 <= answer){
+  document.getElementById("a_13_80").innerHTML = 'X'
+  wrong_80+=1
+ }
+ guess_95 = document.getElementById("q_13_95").value
+ if (guess_95 <= answer){
+  document.getElementById("a_13_95").innerHTML = 'X'
+  wrong_95+=1
+ }
+ guess_99 = document.getElementById("q_13_99").value
+ if (guess_99 <= answer){
+  document.getElementById("a_13_99").innerHTML = 'X'
+  wrong_99+=1
+ }
+ 
+ answer = 261232
+ document.getElementById("a_14").innerHTML = "Answer: " + answer
+ guess_80 = document.getElementById("q_14_80").value
+ if (guess_80 >= answer){
+  document.getElementById("a_14_80").innerHTML = 'X'
+  wrong_80+=1
+ }
+ guess_95 = document.getElementById("q_14_95").value
+ if (guess_95 >= answer){
+  document.getElementById("a_14_95").innerHTML = 'X'
+  wrong_95+=1
+ }
+ guess_99 = document.getElementById("q_14_99").value
+ if (guess_99 >= answer){
+  document.getElementById("a_14_99").innerHTML = 'X'
+  wrong_99+=1
+ }
+ 
+ answer = 1992
+ document.getElementById("a_15").innerHTML = "Answer: " + answer
+ guess_80 = document.getElementById("q_15_80").value
+ if (guess_80 <= answer){
+  document.getElementById("a_15_80").innerHTML = 'X'
+  wrong_80+=1
+ }
+ guess_95 = document.getElementById("q_15_95").value
+ if (guess_95 <= answer){
+  document.getElementById("a_15_95").innerHTML = 'X'
+  wrong_95+=1
+ }
+ guess_99 = document.getElementById("q_15_99").value
+ if (guess_99 <= answer){
+  document.getElementById("a_15_99").innerHTML = 'X'
+  wrong_99+=1
+ }
+ 
+ answer = 81
+ document.getElementById("a_16").innerHTML = "Answer: " + answer
+ guess_80 = document.getElementById("q_16_80").value
+ if (guess_80 >= answer){
+  document.getElementById("a_16_80").innerHTML = 'X'
+  wrong_80+=1
+ }
+ guess_95 = document.getElementById("q_16_95").value
+ if (guess_95 >= answer){
+  document.getElementById("a_16_95").innerHTML = 'X'
+  wrong_95+=1
+ }
+ guess_99 = document.getElementById("q_16_99").value
+ if (guess_99 >= answer){
+  document.getElementById("a_16_99").innerHTML = 'X'
+  wrong_99+=1
+ }
+ 
+ answer = 1963
+ document.getElementById("a_17").innerHTML = "Answer: " + answer
+ guess_80 = document.getElementById("q_17_80").value
+ if (guess_80 <= answer){
+  document.getElementById("a_17_80").innerHTML = 'X'
+  wrong_80+=1
+ }
+ guess_95 = document.getElementById("q_17_95").value
+ if (guess_95 <= answer){
+  document.getElementById("a_17_95").innerHTML = 'X'
+  wrong_95+=1
+ }
+ guess_99 = document.getElementById("q_17_99").value
+ if (guess_99 <= answer){
+  document.getElementById("a_17_99").innerHTML = 'X'
+  wrong_99+=1
+ }
+ 
+ answer = 272
+ document.getElementById("a_18").innerHTML = "Answer: " + answer
+ guess_80 = document.getElementById("q_18_80").value
+ if (guess_80 >= answer){
+  document.getElementById("a_18_80").innerHTML = 'X'
+  wrong_80+=1
+ }
+ guess_95 = document.getElementById("q_18_95").value
+ if (guess_95 >= answer){
+  document.getElementById("a_18_95").innerHTML = 'X'
+  wrong_95+=1
+ }
+ guess_99 = document.getElementById("q_18_99").value
+ if (guess_99 >= answer){
+  document.getElementById("a_18_99").innerHTML = 'X'
+  wrong_99+=1
+ }
+ 
+ answer = 230
+ document.getElementById("a_19").innerHTML = "Answer: " + answer
+ guess_80 = document.getElementById("q_19_80").value
+ if (guess_80 <= answer){
+  document.getElementById("a_19_80").innerHTML = 'X'
+  wrong_80+=1
+ }
+ guess_95 = document.getElementById("q_19_95").value
+ if (guess_95 <= answer){
+  document.getElementById("a_19_95").innerHTML = 'X'
+  wrong_95+=1
+ }
+ guess_99 = document.getElementById("q_19_99").value
+ if (guess_99 <= answer){
+  document.getElementById("a_19_99").innerHTML = 'X'
+  wrong_99+=1
+ }
+ 
+ answer = 71
+ document.getElementById("a_20").innerHTML = "Answer: " + answer
+ guess_80 = document.getElementById("q_20_80").value
+ if (guess_80 >= answer){
+  document.getElementById("a_20_80").innerHTML = 'X'
+  wrong_80+=1
+ }
+ guess_95 = document.getElementById("q_20_95").value
+ if (guess_95 >= answer){
+  document.getElementById("a_20_95").innerHTML = 'X'
+  wrong_95+=1
+ }
+ guess_99 = document.getElementById("q_20_99").value
+ if (guess_99 >= answer){
+  document.getElementById("a_20_99").innerHTML = 'X'
+  wrong_99+=1
+ }
+ 
+ prob=0
+ pwin=0.80
+ for (let i = 0; i < wrong_80; i++) {
+  prob+=(factorial(20)/(factorial(i)*factorial(20-i)))*(pwin**(20-i))*((1-pwin)**i)
+ }
+ prob = 1-prob
+ prob = Math.round(prob*10000)/100
+ 
+ document.getElementById("eval80").innerHTML = "You got " + wrong_80 + "/20 80% questions wrong. (If you were perfectly calibrated, you would have a " + prob + "% chance of making at least this many mistakes.)"
+ 
+ prob=0
+ pwin=0.95
+ for (let i = 0; i < wrong_95; i++) {
+  prob+=(factorial(20)/(factorial(i)*factorial(20-i)))*(pwin**(20-i))*((1-pwin)**i)
+ }
+ prob = 1-prob
+ prob = Math.round(prob*10000)/100
+ 
+ document.getElementById("eval95").innerHTML = "You got " + wrong_95 + "/20 95% questions wrong. (If you were perfectly calibrated, you would have a " + prob + "% chance of making at least this many mistakes.)"
+ 
+ prob=0
+ pwin=0.99
+ for (let i = 0; i < wrong_99; i++) {
+  console.log(i)
+  prob+=(factorial(20)/(factorial(i)*factorial(20-i)))*(pwin**(20-i))*((1-pwin)**i)
+  console.log(prob)
+ }
+ prob = 1-prob
+ prob = Math.round(prob*10000)/100
+ 
+ document.getElementById("eval99").innerHTML = "You got " + wrong_99 + "/20 99% questions wrong. (If you were perfectly calibrated, you would have a " + prob + "% chance of making at least this many mistakes.)"
+ 
+}
+
+</script>
+</body>
+</html>
